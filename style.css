@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+	position:relative;
+	width:100%;
+}
+
+body, html {
+	width:100%;
+	height:100%;
+}
+
+body {
+	margin:0;
+	font-family:"Kanit";
+	font-size:2em;
+	background:black;
+	overflow:hidden;
+	background: #1D022B; 
+}
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main {
+  position: relative;
+}
+section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.mainContent {
+	margin-top:20px;
+	position:relative;
+	width:90%;
+	color:white;
+	height:100%;
+}
+
+.contentWrapper {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+	padding-bottom:80px;
+	width:100%;
+	position:relative;
+	height:100%;
+}
+.flexCenter {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.maskOut {
+	width:fit-content;
+	font-weight:800;
+	font-size:clamp(20px, calc(100vw/8), 4em);
+  /* -webkit-text-stroke: 2px black; */
+	line-height:0.8em;
+	
+	display:flex;
+}
+
+.mask {
+	overflow:hidden;
+	width:fit-content;
+}
+
+.thin {
+	font-weight:200;
+}
